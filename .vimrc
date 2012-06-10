@@ -24,13 +24,16 @@ Bundle "delluminatus/vim-irblack"
 Bundle "https://github.com/vim-scripts/Zenburn.git"
 Bundle "altercation/vim-colors-solarized"
 
+" Languages
+Bundle "avakhov/vim-yaml"
+Bundle "tpope/vim-markdown"
+Bundle "timcharper/textile.vim"
 filetype plugin indent on
 syntax on
 set nocompatible
 
-set background=dark
-let g:solarized_termcolors=16
-colorscheme solarized
+"set background=dark
+"colorscheme solarized
 
 " Modelines might have exploits?
 set modelines=0
@@ -55,15 +58,6 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
-
-set statusline=%t\ %y\ (%{&ff})\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ %l/%L\ 
-(%p%%)
-
-""
-"" PLUGIN REF/NOTES
-""
-" NERDcommenter - <leader>c<space> -> comment/uncomment
-"
 
 ""
 "" SEARCHING
@@ -133,9 +127,10 @@ set listchars=tab:.\ ,eol:¬
 " Save on losing focus
 au FocusLost * :wa
 
+"" Vim 7.whatever features
 
 " Have relative line numbers
-set rnu
+" set rnu
 
 " Enable undo file (persistent undo across sessions)
-set undofile
+"set undofile

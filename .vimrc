@@ -1,37 +1,42 @@
-" vundle config
-set rtp+=~/.vim/vundle/
-call vundle#rc()
-
+set nocompatible
 filetype off
 
-" Bundle to be used
+" vundle config
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+
+" Plugin to be used
 " Sandwich between two filetype declarations
 " for compatibility
+"
+Plugin 'gmarik/Vundle.vim'
 
-Bundle "ervandew/supertab"
-Bundle "rstacruz/sparkup"
-Bundle "scrooloose/nerdcommenter"
-Bundle "mineiro/vim-latex"
-Bundle "https://github.com/vim-scripts/Rainbow-Parenthsis-Bundle.git"
-Bundle "msanders/snipmate.vim"
-Bundle "tpope/vim-surround"
-Bundle "nathanaelkane/vim-indent-guides"
-Bundle "thinca/vim-guicolorscheme"
+Plugin 'ervandew/supertab'
+Plugin 'rstacruz/sparkup'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'mineiro/vim-latex'
+Plugin 'https://github.com/vim-scripts/Rainbow-Parenthsis-Bundle.git'
+Plugin 'msanders/snipmate.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'thinca/vim-guicolorscheme'
 
 " Themes
-Bundle "nanotech/jellybeans.vim"
-Bundle "delluminatus/vim-irblack"
-Bundle "https://github.com/vim-scripts/Zenburn.git"
-Bundle "altercation/vim-colors-solarized"
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'delluminatus/vim-irblack'
+Plugin 'https://github.com/vim-scripts/Zenburn.git'
+Plugin 'altercation/vim-colors-solarized'
 
 " Languages
-Bundle "avakhov/vim-yaml"
-Bundle "tpope/vim-markdown"
-Bundle "timcharper/textile.vim"
-Bundle "wting/rust.vim"
+Plugin 'avakhov/vim-yaml'
+Plugin 'tpope/vim-markdown'
+Plugin 'timcharper/textile.vim'
+Plugin 'wting/rust.vim'
+
+call vundle#end()
 filetype plugin indent on
 syntax on
-set nocompatible
 
 "set background=dark
 "colorscheme solarized

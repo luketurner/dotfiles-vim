@@ -28,6 +28,7 @@ Bundle "altercation/vim-colors-solarized"
 Bundle "avakhov/vim-yaml"
 Bundle "tpope/vim-markdown"
 Bundle "timcharper/textile.vim"
+Bundle "wting/rust.vim"
 filetype plugin indent on
 syntax on
 set nocompatible
